@@ -1,0 +1,13 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+/*                                      
+  http://sass-lang.com/                 
+  http://css-tricks.com/sass-vs-less/ 
+ */
+$headerColor: blue;
+
+body{
+  h1,h2,h3{
+    color: $headerColor;
+  }
+}
+
