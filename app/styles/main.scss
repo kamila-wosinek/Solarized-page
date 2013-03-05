@@ -9,7 +9,7 @@ $mainBgColor: #fdf6e3;  //Base3
 $linkColor: #2aa198; //Cyan
 $buttonColor: #859900;  //Green
 $fontColor: #586e75;  //Base01
-
+$hover: #cb4b16; //Orange
 
 $fontSize: 16px;
 
@@ -26,9 +26,13 @@ $fontSize: 16px;
 @mixin font{
   font-size: $fontSize;
   color: $fontColor;
-  font-family:  "ff-din-web-pro-1",​"ff-din-web-pro-2",​sans-serif;
+  font-family: trebuchet ms,sans-serif;
 }
-
+@mixin button{
+  background-color: $buttonColor;
+  color: $mainBgColor;
+  border-radius: 30px 30px 30px 30px;
+}
 
 html{
   background-color: $mainBgColor;
@@ -43,28 +47,48 @@ html{
     a{
       color: $linkColor;
     }
+
+    .logo{
+      margin-top: 20px;
+      a{
+        text-decoration: none;
+        font-size: 2.5 * $fontSize;
+        font-weight: bold;
+        span.FirstLetter{
+          color: $headerColor;
+        }
+        span.underLogo{
+            font-size: 0.75 * $fontSize;
+            letter-spacing: 3.7mm;
+            font-weight: normal;
+        }
+      }
+    }
+
     nav {
       ul {
           display: block;
           list-style: none;
           margin: 0;
-          padding:75px 0 0;
-          text-align:center;        
+          padding: 50px 0;
+          text-align:right;        
          
           li{
             display: inline;
             white-space: nowrap;
             margin: 0 10px;
             padding: 15px;
-            background-color: $buttonColor;
+            @include button;
               
               a{
                 text-decoration: none;
                 color: $mainBgColor;
-                font-weight: bold;
                 font-size: 1.125 * $fontSize;
                 }
             }
+          li:hover, li:active{
+            background-color: $hover;
+          }
         }
       }
    }
