@@ -11,8 +11,7 @@ $buttonColor: #859900;  //Green
 $fontColor: #586e75;  //Base01
 $hover: #cb4b16; //Orange
 
-$fontSize: 16px;
-
+$fontSize: 90%;
 /* MIXIN */
 
 @mixin left{
@@ -38,48 +37,55 @@ html{
   background-color: $mainBgColor;
   @include font;
   body{
-    width: 996px;
+    width: 90%;
     margin: auto;
 
     h1,h2,h3{
       color: $headerColor;
     }
+    h1{font-size: 1.8 * $fontSize;}
+    h2{font-size: 1.5 * $fontSize;}
+    h3{font-size: 1.2 * $fontSize;}
     a{
       color: $linkColor;
     }
 
     .logo{
-      margin-top: 20px;
+      margin-top: 3%;
+     
       a{
         text-decoration: none;
-        font-size: 2.5 * $fontSize;
+        font-size: 2.78 * $fontSize;
         font-weight: bold;
 
         span.underLogo{
-            font-size: 0.75 * $fontSize;
-            letter-spacing: 3.5mm;
+            font-size: 0.3 * $fontSize;
+            letter-spacing: 2.6mm;
             font-weight: normal;
+            display: block;
         }
       }
     }
 
     nav {
+      @include left;
+      width: 100%;
       ul {
-          display: block;
+          width: 100%;
+          @include left;
           list-style: none;
           margin: 0;
-          padding: 50px 0;
-          text-align:right;        
-         
+          padding: 3% 0;
+          text-align: center;
           li{
-            display: inline;
             white-space: nowrap;
-            margin: 0 10px;
-            padding: 8px 12px;
+            margin: 1% 1% 0 0;
+            padding: 1% 2%;
             @include button;
+            @include left;
             border: 2px solid $linkColor;
               
-              a{
+             a{
                 text-decoration: none;
                 color: $mainBgColor;
                 font-size: 1.125 * $fontSize;
@@ -90,7 +96,5 @@ html{
           }
         }
       }
-   }
-}
-  
-
+    }
+  }
