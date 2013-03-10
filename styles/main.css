@@ -1,0 +1,199 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+/*                                      
+  http://sass-lang.com/                 
+  http://css-tricks.com/sass-vs-less/ 
+ */
+/*  COLORS  */
+/* MIXIN */
+/* line 40, ../../app/styles/main.scss */
+html {
+  background-color: #fdf6e3;
+  font-size: 90%;
+  color: #586e75;
+  font-family: trebuchet ms, sans-serif;
+}
+/* line 43, ../../app/styles/main.scss */
+html body {
+  width: 70%;
+  margin: auto;
+}
+@media screen and (max-width: 900px) {
+  /* line 43, ../../app/styles/main.scss */
+  html body {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 950px) {
+  /* line 43, ../../app/styles/main.scss */
+  html body {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 951px) and (max-width: 1000px) {
+  /* line 43, ../../app/styles/main.scss */
+  html body {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1100px) {
+  /* line 43, ../../app/styles/main.scss */
+  html body {
+    width: 75%;
+  }
+}
+/* line 53, ../../app/styles/main.scss */
+html body h1, html body h2, html body h3 {
+  color: #b58900;
+}
+/* line 56, ../../app/styles/main.scss */
+html body h1 {
+  font-size: 162%;
+}
+/* line 57, ../../app/styles/main.scss */
+html body h2 {
+  font-size: 135%;
+}
+/* line 58, ../../app/styles/main.scss */
+html body h3 {
+  font-size: 108%;
+}
+/* line 59, ../../app/styles/main.scss */
+html body a {
+  color: #2aa198;
+}
+/* line 63, ../../app/styles/main.scss */
+html body .logo {
+  margin-top: 3%;
+}
+/* line 66, ../../app/styles/main.scss */
+html body .logo a {
+  text-decoration: none;
+  font-size: 2.6em;
+  font-weight: bold;
+}
+/* line 71, ../../app/styles/main.scss */
+html body .logo a span.underLogo {
+  font-size: 0.25em;
+  letter-spacing: 2.6mm;
+  font-weight: normal;
+  display: block;
+}
+/* line 80, ../../app/styles/main.scss */
+html body nav {
+  display: block;
+  float: left;
+  width: 100%;
+}
+/* line 83, ../../app/styles/main.scss */
+html body nav ul {
+  width: 100%;
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 3% 0;
+  text-align: center;
+}
+/* line 90, ../../app/styles/main.scss */
+html body nav ul li {
+  white-space: nowrap;
+  margin: 1% 1% 0 0;
+  padding: 1% 2%;
+  background-color: #859900;
+  color: #fdf6e3;
+  -webkit-border-radius: 30px 30px 30px 30px;
+  -moz-border-radius: 30px 30px 30px 30px;
+  -ms-border-radius: 30px 30px 30px 30px;
+  -o-border-radius: 30px 30px 30px 30px;
+  border-radius: 30px 30px 30px 30px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #859900), color-stop(100%, #9da500));
+  background: -webkit-linear-gradient(top, #859900, #9da500);
+  background: -moz-linear-gradient(top, #859900, #9da500);
+  background: -o-linear-gradient(top, #859900, #9da500);
+  background: linear-gradient(top, #859900, #9da500);
+  display: block;
+  float: left;
+  border: 2px solid #2aa198;
+}
+/* line 97, ../../app/styles/main.scss */
+html body nav ul li:hover, html body nav ul li:active {
+  background: #cb4b16;
+}
+/* line 100, ../../app/styles/main.scss */
+html body nav ul li a {
+  text-decoration: none;
+  color: #fdf6e3;
+  font-size: 1.125em;
+}
+/* line 108, ../../app/styles/main.scss */
+html body article.leftColumn {
+  width: 75%;
+  display: block;
+  float: left;
+  text-align: justify;
+}
+@media screen and (max-width: 900px) {
+  /* line 108, ../../app/styles/main.scss */
+  html body article.leftColumn {
+    width: 100%;
+  }
+}
+/* line 116, ../../app/styles/main.scss */
+html body aside.rightColumn {
+  width: 15%;
+  padding-left: 5%;
+  display: block;
+  float: right;
+  margin-top: 5%;
+  border-left: 5px dotted #2aa198;
+}
+@media screen and (max-width: 900px) {
+  /* line 116, ../../app/styles/main.scss */
+  html body aside.rightColumn {
+    border-left: none;
+    padding-left: 0;
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+}
+/* line 130, ../../app/styles/main.scss */
+html body aside.rightColumn img {
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  -ms-border-radius: 90px;
+  -o-border-radius: 90px;
+  border-radius: 90px;
+  display: block;
+  float: left;
+  padding: 2px;
+  border: 1px solid #b58900;
+}
+@media screen and (max-width: 900px) {
+  /* line 130, ../../app/styles/main.scss */
+  html body aside.rightColumn img {
+    margin: auto;
+    float: none;
+  }
+}
+/* line 140, ../../app/styles/main.scss */
+html body aside.rightColumn span.contactInfo {
+  clear: both;
+  display: block;
+  float: left;
+  margin-top: 5%;
+}
+/* line 144, ../../app/styles/main.scss */
+html body aside.rightColumn span.contactInfo strong {
+  color: #b58900;
+}
+@media screen and (max-width: 900px) {
+  /* line 140, ../../app/styles/main.scss */
+  html body aside.rightColumn span.contactInfo {
+    margin: 2% auto auto;
+    text-align: center;
+    float: none;
+  }
+}
